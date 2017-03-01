@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     //deklaracje
-    int n, tmp;
+    int n;
     bool czy_zlozona = 0;
 
     //input i sprawdzenie poprawnosci
@@ -24,9 +24,7 @@ int main()
     {
         if (czy_zlozona == 1) break; //wychodzimy jesli juz wiadomo, ze zlozona
 
-        tmp = n/i;
-
-        if (tmp*i == n) czy_zlozona = 1;
+        if (n%i == 0) czy_zlozona = 1;
     }
 
     //output
