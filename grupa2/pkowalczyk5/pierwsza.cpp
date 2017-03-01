@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -20,7 +21,7 @@ int main()
     }
 
     //glowna petla
-    for (int i = 2; i < n/2+1; i++) //powyzej ceiling(n/2) nie ma sensu liczyc
+    for (int i = 2; i <= sqrt(n); i++) //powyzej ceiling(n/2) nie ma sensu liczyc
     {
         if (czy_zlozona == 1) break; //wychodzimy jesli juz wiadomo, ze zlozona
 
